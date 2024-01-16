@@ -23,12 +23,12 @@ from langchain.chains import RetrievalQA
 from langchain.retrievers.multi_query import MultiQueryRetriever
 
 ## keys
-openai_key = st.secrets['OPENAI_API_KEY']
-qdrant_key = st.secrets['QDRANT_API_KEY']
-qdrant_url = st.secrets['QDRANT_URL']
-es_user = st.secrets['ES_USER']
-es_pass = st.secrets['ES_PASSWORD']
-es_cloud_id = st.secrets['ES_CLOUD_ID']
+openai_key = st.secrets["secrets"]['OPENAI_API_KEY']
+qdrant_key = st.secrets["qdrant"]['QDRANT_API_KEY']
+qdrant_url = st.secrets["qdrant"]['QDRANT_URL']
+es_user = st.secrets["elasticsearch"]['ES_USER']
+es_pass = st.secrets["elasticsearch"]['ES_PASSWORD']
+es_cloud_id = st.secrets["elasticsearch"]['ES_CLOUD_ID']
 
 def main():
     load_dotenv()
