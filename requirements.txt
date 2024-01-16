@@ -1,0 +1,11 @@
+streamlit
+pypdf
+langchain
+pymupdf
+docx2txt
+python-docx
+elasticsearch
+python-dotenv
+streamlit_chat
+openai
+faiss-gpu
