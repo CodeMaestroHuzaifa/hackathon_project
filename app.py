@@ -36,6 +36,12 @@ def main():
     ## page.
     st.set_page_config(page_title="chatbot", page_icon="logo.png")
     st.header("Hackathon Final Round!🦜")
+    hide_button = """<style>
+        header{
+            visibility:hidden;
+        }
+    </style>"""
+    st.markdown(hide_button, unsafe_allow_html=True)
 
     ## memory.
     if "conversation" not in st.session_state:
