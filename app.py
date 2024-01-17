@@ -23,7 +23,7 @@ from langchain.chains import RetrievalQA
 from langchain.retrievers.multi_query import MultiQueryRetriever
 
 ## keys
-openai_key = st.secrets.openai.OPENAI_API_KEY
+openai_key = st.secrets["OPENAI_API_KEY"]
 qdrant_key = st.secrets.qdrant.QDRANT_API_KEY
 qdrant_url = st.secrets.qdrant.QDRANT_URL
 es_user = st.secrets.elasticsearch.ES_USER
