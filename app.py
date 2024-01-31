@@ -258,7 +258,7 @@ def get_qa_chain(vectorstore , num_chunks):
         retriever=vectorstore.as_retriever(
             search_type="similarity",
             search_kwargs={"k": num_chunks}),
-            chain_type_kwargs=chain_type_kwargs,
+            # chain_type_kwargs=chain_type_kwargs,
             return_source_documents=True)
     
     return qa
